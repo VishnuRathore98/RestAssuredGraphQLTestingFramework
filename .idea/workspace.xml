@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaba855c-097d-4347-a54e-b6ef99f9af54" name="Changes" comment="&quot;Mistakes unmade&quot;">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="eaba855c-097d-4347-a54e-b6ef99f9af54" name="Changes" comment="&quot;Parameterized query, using @DataProvider.&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/pojos/GraphQLQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/pojos/QueryVariable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/graphql/tests/GraphQLQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/graphql/tests/GraphQLQueryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,11 +109,20 @@
       <option name="project" value="LOCAL" />
       <updated>1704030979923</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;Parameterized query, using @DataProvider.&quot;">
+      <option name="closed" value="true" />
+      <created>1704035893205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704035893205</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Mistakes unmade&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Mistakes unmade&quot;" />
+    <MESSAGE value="&quot;Parameterized query, using @DataProvider.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Parameterized query, using @DataProvider.&quot;" />
   </component>
 </project>
