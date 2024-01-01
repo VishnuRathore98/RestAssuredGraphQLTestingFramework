@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaba855c-097d-4347-a54e-b6ef99f9af54" name="Changes" comment="&quot;Parameterized query, using @DataProvider.&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/pojos/GraphQLQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/pojos/QueryVariable.java" afterDir="false" />
+    <list default="true" id="eaba855c-097d-4347-a54e-b6ef99f9af54" name="Changes" comment="&quot;Using POJO to create query and variable payload.&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/builder/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/builder/CustomerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/builder/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/builder/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/builder/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/builder/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/graphql/tests/GraphQLQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/graphql/tests/GraphQLQueryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +42,17 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/vpsr/IdeaProjects/RestAssuredGraphQLTestingFramework/src/test/java/com/graphql/tests",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vpsr/IdeaProjects/RestAssuredGraphQLTestingFramework/src/test/java/com/graphql/tests&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/com/graphql/tests" />
@@ -60,7 +62,46 @@
       <recent name="com.graphql.tests" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CustomerTest">
+    <configuration name="CustomerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.builder.CustomerTest" />
+      <module name="RestAssuredGraphQLTestingFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.builder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.builder.PersonTest" />
+      <module name="RestAssuredGraphQLTestingFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.builder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.builder.UserTest" />
+      <module name="RestAssuredGraphQLTestingFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.builder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraphQLQueryTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredGraphQLTestingFramework" />
       <extension name="coverage">
@@ -80,6 +121,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CustomerTest" />
+        <item itemvalue="Application.PersonTest" />
+        <item itemvalue="Application.UserTest" />
         <item itemvalue="TestNG.GraphQLQueryTest" />
       </list>
     </recent_temporary>
@@ -117,12 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704035893205</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&quot;Using POJO to create query and variable payload.&quot;">
+      <option name="closed" value="true" />
+      <created>1704084310124</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704084310124</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Mistakes unmade&quot;" />
     <MESSAGE value="&quot;Parameterized query, using @DataProvider.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Parameterized query, using @DataProvider.&quot;" />
+    <MESSAGE value="&quot;Using POJO to create query and variable payload.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Using POJO to create query and variable payload.&quot;" />
   </component>
 </project>
